@@ -369,9 +369,14 @@ p, h1, h2, h3, span, a {
   text-transform: uppercase;
 }
 
-.project__link {
-  display: inline-block;
+.project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-top: 1.5rem;
+}
+
+.project__link {
   font-size: var(--text-body);
   font-weight: var(--weight-bold);
   color: var(--color-accent);

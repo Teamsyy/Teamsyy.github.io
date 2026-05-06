@@ -81,7 +81,10 @@ const PROJECTS = [
       "GitHub Actions",
     ],
     github: null,
-    url: "https://bscit.sit.kmutt.ac.th/capstone25/cp25kp2/",
+    links: [
+      { label: "Live Demo", url: "https://bscit.sit.kmutt.ac.th/capstone25/cp25kp2/" },
+      { label: "Senior Project", url: "https://seniorproject.sit.kmutt.ac.th/showproject/IT65-BU30" },
+    ],
     video: null,
     images: [
       "/screenshots/aimi/landing.png",
@@ -107,7 +110,9 @@ const PROJECTS = [
       "SEO Optimization",
     ],
     github: "https://kidngai.com",
-    url: "https://www.kidngai.com",
+    links: [
+      { label: "Visit Site", url: "https://www.kidngai.com" },
+    ],
     video: null,
     images: [
       "/screenshots/kidngai/home.png",
@@ -327,10 +332,14 @@ function Project({ project, reversed }) {
             </span>
           ))}
         </div>
-        {project.url && (
-          <a href={project.url} className="project__link" target="_blank" rel="noopener noreferrer">
-            Visit Site →
-          </a>
+        {project.links && project.links.length > 0 && (
+          <div className="project__links">
+            {project.links.map((link, i) => (
+              <a key={i} href={link.url} className="project__link" target="_blank" rel="noopener noreferrer">
+                {link.label} →
+              </a>
+            ))}
+          </div>
         )}
       </div>
     </article>
