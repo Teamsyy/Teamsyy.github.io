@@ -94,9 +94,9 @@ const PROJECTS = [
   {
     num: "02",
     title: "Kidngai",
-    subtitle: "Production Web App",
+    subtitle: "Personal Project",
     description:
-      "A comprehensive Thai-language calculator platform with 17 specialized tools deployed to kidngai.com via Vercel. Built with Next.js 14 and TypeScript, featuring real-time input validation, responsive mobile-first UI with dark mode, and Vitest-tested calculation logic (263 tests), serving over 10,000 monthly users.",
+      "A Thai-language calculator platform with 17 specialized tools deployed to kidngai.com via Vercel. Built with Next.js 14 and TypeScript, featuring real-time input validation, responsive mobile-first UI with dark mode, and Vitest-tested calculation logic (263 tests).",
     stack: [
       "Next.js 14",
       "TypeScript",
