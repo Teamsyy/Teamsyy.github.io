@@ -369,6 +369,20 @@ p, h1, h2, h3, span, a {
   text-transform: uppercase;
 }
 
+.project__link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: var(--text-body);
+  font-weight: var(--weight-bold);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.project__link:hover {
+  opacity: 0.7;
+}
+
 /* ===== BLUEPRINT ===== */
 .blueprint {
   aspect-ratio: 16 / 9;
