@@ -1,0 +1,70 @@
+:root {
+  /* ===== COLOR ===== */
+  /* Using OKLCH for precision. Tinted toward blueprint blue (Hue 250). */
+  /* Light Theme (Default) */
+  --color-bg:            oklch(96% 0.005 250);
+  --color-surface:       oklch(94% 0.008 250);
+  --color-border:        oklch(88% 0.012 250);
+  --color-text-muted:    oklch(45% 0.015 250);
+  --color-text:          oklch(15% 0.020 250);
+  
+  /* Accent System - Light (Restrained strategy) */
+  --color-accent:        oklch(60% 0.140 250); /* Technical Blue */
+  --color-accent-2:      oklch(65% 0.120 180); /* Muted Cyan */
+  --color-accent-3:      oklch(70% 0.100 45);  /* Caution Orange */
+  --color-accent-subtle: oklch(92% 0.030 250);
+
+  /* ===== TYPE SCALE (Modular 1.25 ratio) ===== */
+  --text-label:   0.75rem;                           /* 12px — uppercase labels */
+  --text-meta:    0.875rem;                          /* 14px — dates, stack items */
+  --text-ui:      0.9375rem;                         /* 15px — nav, links */
+  --text-body:    1.0625rem;                         /* 17px — project descriptions */
+  --text-base:    1.25rem;                           /* 20px — entry titles */
+  --text-lead:    1.5rem;                            /* 24px — hero bio */
+  --text-project: clamp(1.875rem, 4vw, 2.5rem);      /* project headings */
+  --text-display: clamp(3.5rem, 10vw, 7.5rem);       /* hero name */
+
+  /* ===== FONT WEIGHT ===== */
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
+  --weight-black:     900;
+
+  /* ===== LAYOUT ===== */
+  --max-w:       1200px;
+  --pad-x:       clamp(1.5rem, 6vw, 4rem);
+  --pad-section: clamp(6rem, 12vh, 10rem);
+  --pad-hero:    clamp(4rem, 10vh, 8rem);
+}
+
+/* Dark Theme — Clinical/SRE Lab vibes */
+:root[data-theme="dark"] {
+  --color-bg:            oklch(12% 0.010 250);
+  --color-surface:       oklch(16% 0.012 250);
+  --color-border:        oklch(22% 0.015 250);
+  --color-text-muted:    oklch(65% 0.012 250);
+  --color-text:          oklch(94% 0.008 250);
+  
+  --color-accent:        oklch(75% 0.120 250);
+  --color-accent-2:      oklch(80% 0.100 180);
+  --color-accent-3:      oklch(85% 0.100 45);
+  --color-accent-subtle: oklch(20% 0.030 250);
+}
+
+/* System preference fallback */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg:            oklch(12% 0.010 250);
+    --color-surface:       oklch(16% 0.012 250);
+    --color-border:        oklch(22% 0.015 250);
+    --color-text-muted:    oklch(65% 0.012 250);
+    --color-text:          oklch(94% 0.008 250);
+    
+    --color-accent:        oklch(75% 0.120 250);
+    --color-accent-2:      oklch(80% 0.100 180);
+    --color-accent-3:      oklch(85% 0.100 45);
+    --color-accent-subtle: oklch(20% 0.030 250);
+  }
+}
