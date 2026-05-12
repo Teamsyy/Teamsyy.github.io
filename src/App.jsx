@@ -86,12 +86,7 @@ const PROJECTS = [
       { label: "Senior Project", url: "https://seniorproject.sit.kmutt.ac.th/showproject/IT65-BU30" },
     ],
     video: null,
-    images: [
-      "/screenshots/aimi/landing.png",
-      "/screenshots/aimi/dashboard.png",
-      "/screenshots/aimi/content.png",
-      "/screenshots/aimi/shop.png",
-    ],
+    images: [],
     layout: "wide",
     accent: "var(--color-accent-2)",
   },
