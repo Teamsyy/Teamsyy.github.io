@@ -439,8 +439,8 @@ function App() {
               <DecryptedText text="Thuanchamnan" />
             </h1>
             <p className="hero__bio fade-in fade-in--visible" style={{transitionDelay: "0.3s"}}>
-              4th-year IT student at KMUTT building full-stack systems with
-              Vue, Go, Spring Boot, and Python.
+              Final-year IT student at KMUTT building full-stack systems with
+              Vue, Go, Spring Boot. Experienced in end-to-end development — from system design to deployment and testing
             </p>
             <div className="hero__links fade-in fade-in--visible" style={{transitionDelay: "0.4s"}}>
               <TerminalLink href="mailto:taspol.thua@kmutt.ac.th" className="hero__link">
