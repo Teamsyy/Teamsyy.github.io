@@ -484,20 +484,6 @@ html {
   border-color: oklch(70% 0.18 150) !important;
 }
 
-/* ===== CURSOR GLOW ===== */
-.glow-viewport {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: radial-gradient(
-    800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    color-mix(in oklch, var(--color-accent) 12%, transparent) 0%,
-    transparent 65%
-  );
-  transition: background 0.1s ease-out;
-}
-
 /* ===== FOOTER ===== */
 footer {
   padding: var(--pad-section) 0;
