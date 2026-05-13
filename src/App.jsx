@@ -88,9 +88,9 @@ const PROJECTS = [
     video: null,
     images: [
       "/screenshots/aimi/landing.png",
+      "/screenshots/aimi/shop.png",
       "/screenshots/aimi/dashboard.png",
       "/screenshots/aimi/content.png",
-      "/screenshots/aimi/shop.png",
     ],
     layout: "wide",
     accent: "var(--color-accent-2)",
